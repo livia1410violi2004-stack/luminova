@@ -99,7 +99,7 @@ async function getSupabaseClient() {
   }
   if (!window.supabase?.createClient) throw new Error("Não foi possível carregar a biblioteca do Supabase. Verifique sua conexão.");
   window.luminovaSupabase = window.supabase.createClient(config.url, config.anonKey, {
-    auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true }
+    auth: { storage: window.sessionStorage, persistSession: true, autoRefreshToken: true, detectSessionInUrl: true }
   });
   return window.luminovaSupabase;
 }

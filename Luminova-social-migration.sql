@@ -98,6 +98,6 @@ drop policy if exists luminova_community_media_delete_own_folder on storage.obje
 create policy luminova_community_media_delete_own_folder on storage.objects for delete to authenticated
 using (bucket_id in ('community-media','profile-media') and (storage.foldername(name))[1] = auth.uid()::text);
 
--- Campos de configuração não sensíveis; jamais armazene senhas privadas em JSON/localStorage.
+-- Campos de configuração não sensíveis; nunca armazene senhas privadas em JSON ou no navegador.
 comment on column public.communities.settings is 'Personalização visual da comunidade (tema, cor, layout).';
 comment on column public.profiles.profile_settings is 'Preferências visuais e layout do perfil do usuário.';
