@@ -25,23 +25,7 @@ const toast = (msg) => {
    ==============  PÁGINA: index.html (LOGIN)  ===============
    ============================================================ */
 
-/* ---------- INTRO ---------- */
-(function initIntro() {
-  const body = document.body;
-  const skip = $("#skip");
-  if (!skip) return;
-
-  function endIntro() {
-    body.classList.add("ready");
-  }
-  const t = setTimeout(endIntro, 3200);
-
-  skip.addEventListener("click", function () {
-    clearTimeout(t);
-    endIntro();
-  });
-})();
-
+/* A animação de abertura foi removida para entrar direto na tela inicial. */
 /* ---------- TROCA WELCOME / LOGIN ---------- */
 (function initScreens() {
   const sWelcome = $("#screenWelcome");
