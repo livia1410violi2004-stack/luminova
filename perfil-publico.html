@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#080714">
+<title>LumiNova — Perfil</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.public-profile-wrap{max-width:1000px;margin:0 auto;padding:24px 28px 64px}.pp-back{display:inline-flex;gap:8px;align-items:center;color:var(--muted,#b9b4ca);text-decoration:none;margin:4px 0 20px}.pp-card{overflow:hidden;border:1px solid #ffffff18;border-radius:24px;background:rgba(16,13,34,.86);box-shadow:0 24px 80px #0003}.pp-cover{height:230px;background:radial-gradient(ellipse at 20% 20%,#8b5cf688,transparent 45%),radial-gradient(ellipse at 80% 0%,#e8c88a55,transparent 42%),linear-gradient(135deg,#17122f,#090817);background-size:cover;background-position:center;position:relative}.pp-cover:after{content:"✦  ✧       ✦     ✧";position:absolute;inset:25px;color:#fff9;letter-spacing:35px;font-size:20px;pointer-events:none}.pp-profile-row{display:flex;gap:22px;align-items:flex-end;padding:0 30px 24px;margin-top:-52px;position:relative}.pp-avatar{width:116px;height:116px;object-fit:cover;border-radius:50%;border:5px solid #100d22;background:#27213e;flex:none}.pp-identity{min-width:0;flex:1;padding-bottom:8px}.pp-identity h1{font:500 clamp(27px,4vw,38px) Fraunces,serif;margin:0 0 5px;color:#fff}.pp-handle{color:#c2b8d9;font-size:14px}.pp-bio{padding:0 30px 24px;color:#e0dbea;line-height:1.7;white-space:pre-wrap}.pp-stats{display:flex;flex-wrap:wrap;gap:28px;padding:17px 30px;border-top:1px solid #ffffff14;color:#bfb6d3;font-size:13px}.pp-stats strong{display:block;color:#fff;font-size:19px;margin-bottom:2px}.pp-posts-heading{display:flex;align-items:center;justify-content:space-between;margin:32px 0 16px}.pp-posts-heading h2{font:500 27px Fraunces,serif;margin:0}.pp-post{padding:22px;border:1px solid #ffffff16;border-radius:18px;background:#100d22c9;margin-bottom:14px}.pp-post-top{display:flex;align-items:center;gap:10px;margin-bottom:14px}.pp-post-top img{width:38px;height:38px;border-radius:50%;object-fit:cover;background:#29213e}.pp-post-top strong{display:block;color:#fff}.pp-post-top time{font-size:12px;color:#aaa2bd}.pp-post-content{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7;color:#eee9f7}.pp-media{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}.pp-media img,.pp-media video{max-width:100%;max-height:420px;border-radius:14px;object-fit:contain;background:#080714}.pp-state{padding:26px;border:1px solid #ffffff18;border-radius:18px;background:#100d22c9;color:#d8d0e8;line-height:1.7}.pp-badge{display:inline-block;font-size:10px;letter-spacing:1.5px;color:#e8c88a;border:1px solid #e8c88a66;padding:7px 10px;border-radius:99px;margin-bottom:12px}.pp-action{display:inline-flex;align-items:center;gap:8px;border:1px solid #ffffff24;border-radius:12px;padding:11px 15px;color:#fff;text-decoration:none;background:#ffffff0a}.pp-action:hover{background:#ffffff16}@media(max-width:640px){.public-profile-wrap{padding:16px 14px 40px}.pp-cover{height:165px}.pp-profile-row{padding:0 18px 18px;gap:14px;margin-top:-42px}.pp-avatar{width:88px;height:88px}.pp-bio{padding:0 18px 20px}.pp-stats{padding:16px 18px;gap:20px}.pp-post{padding:17px}}
+</style></head>
+<body>
+<div class="sky" aria-hidden="true"><div class="haze haze--north"></div><div class="haze haze--south"></div><div class="belt"></div><div class="stars stars--far"></div><div class="stars stars--near"></div><div class="vignette"></div></div>
+<div class="public-profile-wrap">
+<a class="pp-back" href="perfil.html">← Voltar</a>
+<section class="pp-card" aria-label="Perfil público">
+<div class="pp-cover" id="ppCover"></div>
+<div class="pp-profile-row"><img class="pp-avatar" id="ppAvatar" alt="Foto de perfil" src=""><div class="pp-identity"><span class="pp-badge">UNIVERSO LUMINOVA</span><h1 id="ppName">Carregando perfil…</h1><div class="pp-handle" id="ppHandle"></div></div></div>
+<p class="pp-bio" id="ppBio"></p>
+<div class="pp-stats"><div><strong id="ppPostsCount">—</strong>Publicações</div><div><strong id="ppFollowers">—</strong>Seguidores</div><div><strong id="ppFollowing">—</strong>Seguindo</div></div>
+</section>
+<div class="pp-posts-heading"><h2>Publicações</h2><a class="pp-action" href="geral.html">Explorar feed ↗</a></div>
+<section id="ppPosts" aria-live="polite"><div class="pp-state">Carregando publicações…</div></section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="supabase-config.js"></script><script src="perfil-publico.js" defer></script>
+</body></html>
